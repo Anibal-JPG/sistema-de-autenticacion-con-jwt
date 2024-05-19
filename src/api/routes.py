@@ -24,7 +24,7 @@ def handle_hello():
 
     return jsonify(response_body), 200
 
-@api.route('/signup', methods=["POST"])
+@api.route('/register', methods=["POST"])
 def create_user():
     name = request.json.get("name",None)
     email = request.json.get("email", None)
